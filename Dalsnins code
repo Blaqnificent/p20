@@ -23,5 +23,7 @@ while attempts > 0:
         attempts -= 1
         print("Sorry, your guess was high. You now have " + str(attempts) + " attempts left.")
         numberhint[1] = number
-
-    print("Please make another guess. (hint: the number is between " + str(numberhint[0]) + " and " + str(numberhint[1]) + ".")
+    if attempts == 0:
+        print('You lose!')
+        break
+    print(f"Please make another guess. (hint: the number is between {numberhint[0]} and {numberhint[1]}.")
