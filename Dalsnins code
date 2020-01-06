@@ -16,11 +16,11 @@ while attempts > 0:
         print("Congratulations, you guessed the number!")
         break
     elif number < randomnumber:
-        attempts = attempts - 1
+        attempts -= 1
         print("Sorry, your guess was too low. You now have " + str(attempts) + " attempts left.")
         numberhint[0] = number
     elif number > randomnumber:
-        attempts = attempts - 1
+        attempts -= 1
         print("Sorry, your guess was high. You now have " + str(attempts) + " attempts left.")
         numberhint[1] = number
 
